@@ -2,9 +2,9 @@ module MongoidOrderable #:nodoc:
   module Mongoid #:nodoc:
     module Contexts #:nodoc:
       module Enumerable #:nodoc:
-        def inc attribute, value
+        def inc hash
           iterate do |doc|
-            doc.inc(attribute, value)
+            doc.inc(hash)
           end
         end
       end
